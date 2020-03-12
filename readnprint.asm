@@ -17,8 +17,7 @@ putc:
     ret
 
 readc:
-    mov ah, 0x00    ;mov ah, 00h
-    ;mov al, 00h 
+    mov ah, 0x00 
     int 16h
     ret
 
