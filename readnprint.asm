@@ -35,7 +35,6 @@ gets:
     mov al, 0
     .for:
         call readc
-        
         stosb
         cmp al, 13
         je .fim
@@ -68,9 +67,7 @@ start:
 
     mov si, endl
     call prints
-
     jmp init
-
 
 times 510-($-$$) db 0
 dw 0xaa55
